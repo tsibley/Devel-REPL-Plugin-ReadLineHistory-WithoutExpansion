@@ -1,14 +1,11 @@
 # NAME
 
-Devel::REPL::Plugin::ReadLineHistory::WithoutExpansion - Blah blah blah
-
-# SYNOPSIS
-
-    use Devel::REPL::Plugin::ReadLineHistory::WithoutExpansion;
+Devel::REPL::Plugin::ReadLineHistory::WithoutExpansion - ReadLineHistory plugin, without expansion
 
 # DESCRIPTION
 
-Devel::REPL::Plugin::ReadLineHistory::WithoutExpansion is
+The standard readline history plugin makes it impossible to disable history
+expansion (via `!`) from a profile or rc file.  This plugins solves that.
 
 # AUTHOR
 

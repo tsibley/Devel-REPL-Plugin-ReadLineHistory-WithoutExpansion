@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "ReadLineHistory plugin, without expansion",
    "author" : [
       "Thomas Sibley <tsibley@cpan.org>"
    ],
