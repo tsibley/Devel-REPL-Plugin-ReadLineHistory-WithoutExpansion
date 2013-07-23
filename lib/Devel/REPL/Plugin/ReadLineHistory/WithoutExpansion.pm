@@ -4,6 +4,15 @@ use strict;
 use 5.008_005;
 our $VERSION = '0.01';
 
+use Moose::Role;
+
+with 'Devel::REPL::Plugin::ReadLineHistory';
+
+before 'run_once' => sub {
+    my $self = shift;
+    $self->term->Attribs->{do_expand} = 0;
+};
+
 1;
 __END__
 
@@ -11,15 +20,12 @@ __END__
 
 =head1 NAME
 
-Devel::REPL::Plugin::ReadLineHistory::WithoutExpansion - Blah blah blah
-
-=head1 SYNOPSIS
-
-  use Devel::REPL::Plugin::ReadLineHistory::WithoutExpansion;
+Devel::REPL::Plugin::ReadLineHistory::WithoutExpansion - ReadLineHistory plugin, without expansion
 
 =head1 DESCRIPTION
 
-Devel::REPL::Plugin::ReadLineHistory::WithoutExpansion is
+The standard readline history plugin makes it impossible to disable history
+expansion (via C<!>) from a profile or rc file.  This plugins solves that.
 
 =head1 AUTHOR
 
