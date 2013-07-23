@@ -1,0 +1,6 @@
+/Devel-REPL-Plugin-ReadLineHistory-WithoutExpansion-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
