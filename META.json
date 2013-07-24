@@ -36,6 +36,8 @@
       },
       "runtime" : {
          "requires" : {
+            "Devel::REPL::Plugin::ReadLineHistory" : "0",
+            "Moose::Role" : "0",
             "perl" : "5.008005"
          }
       },
